@@ -1,28 +1,17 @@
+import { SectionBackground } from "@/components/sections/SectionBackground";
+
+const CARE_GRADIENT =
+  "radial-gradient(ellipse at 10% 100%, rgba(168,207,224,0.65) 0%, rgba(168,207,224,0) 62%), radial-gradient(ellipse at 95% 100%, rgba(45,122,69,0.40) 0%, rgba(45,122,69,0) 68%), linear-gradient(180deg, #fdfdf8 0%, #f4f5ed 60%, #e3ece3 100%)";
+
 export function CareSection() {
   return (
     <section id="care" className="relative min-h-[100svh] overflow-hidden">
-      <div className="absolute inset-0">
-        <div
-          className="h-full w-full"
-          style={{
-            background:
-              "radial-gradient(ellipse at 10% 100%, rgba(168,207,224,0.65) 0%, rgba(168,207,224,0) 62%), radial-gradient(ellipse at 95% 100%, rgba(45,122,69,0.40) 0%, rgba(45,122,69,0) 68%), linear-gradient(180deg, #fdfdf8 0%, #f4f5ed 60%, #e3ece3 100%)",
-          }}
-          aria-hidden="true"
-        />
-        <div
-          className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(255,255,255,0.10)_0%,rgba(255,255,255,0.05)_40%,rgba(255,255,255,0)_72%)]"
-          aria-hidden="true"
-        />
-        <div
-          className="absolute inset-x-0 top-0 h-16 bg-gradient-to-b from-[#fbfbfb] via-[#fbfbfb]/45 to-transparent"
-          aria-hidden="true"
-        />
-        <div
-          className="absolute inset-x-0 bottom-0 h-16 bg-gradient-to-t from-[#fbfbfb] via-[#fbfbfb]/45 to-transparent"
-          aria-hidden="true"
-        />
-      </div>
+      <SectionBackground
+        gradient={CARE_GRADIENT}
+        overlayClassName="bg-[radial-gradient(ellipse_at_center,rgba(255,255,255,0.10)_0%,rgba(255,255,255,0.05)_40%,rgba(255,255,255,0)_72%)]"
+        topFadeClassName="bg-gradient-to-b from-[#fbfbfb] via-[#fbfbfb]/45 to-transparent"
+        bottomFadeClassName="bg-gradient-to-t from-[#fbfbfb] via-[#fbfbfb]/45 to-transparent"
+      />
 
       <div className="relative mx-auto flex min-h-[100svh] max-w-6xl flex-col items-center justify-center px-6 py-16 text-center sm:py-20">
         <div className="max-w-3xl">

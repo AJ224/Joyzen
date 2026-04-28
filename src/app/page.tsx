@@ -1,7 +1,7 @@
 import { Hero } from "@/components/Hero";
 import { SiteFooter } from "@/components/SiteFooter";
-import { BookSection } from "@/components/sections/BookSection";
 import { CareSection } from "@/components/sections/CareSection";
+import { ClarityCallCtaSection } from "@/components/sections/ClarityCallCtaSection";
 import { IntroSection } from "@/components/sections/IntroSection";
 import { WhySection } from "@/components/sections/WhySection";
 
@@ -12,7 +12,7 @@ export default function Home() {
       <IntroSection />
       <WhySection />
       <CareSection />
-      <BookSection />
+      <ClarityCallCtaSection />
       <SiteFooter />
     </div>
   );

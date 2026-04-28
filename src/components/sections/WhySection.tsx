@@ -1,4 +1,8 @@
 import Image from "next/image";
+import { SectionBackground } from "@/components/sections/SectionBackground";
+
+const WHY_GRADIENT =
+  "radial-gradient(ellipse at 0% 55%, #a8d8ea 0%, transparent 45%), radial-gradient(ellipse at 100% 60%, #d4b8e0 0%, transparent 40%), radial-gradient(ellipse at 15% 100%, #e8896a 0%, transparent 40%), radial-gradient(ellipse at 55% 100%, #e8956e 0%, transparent 45%), radial-gradient(ellipse at 100% 100%, #f0d96a 0%, transparent 35%), linear-gradient(180deg, #fffefa 0%, #fdf8f4 50%, #f5e8dc 100%)";
 
 const glassBase = "rounded-[24px] backdrop-blur-xl";
 
@@ -15,28 +19,12 @@ export function WhySection() {
       id="why"
       className="relative min-h-[100svh] overflow-hidden bg-[#fbfbfb]"
     >
-      <div className="absolute inset-0">
-        <div
-          className="h-full w-full"
-          style={{
-            background:
-              "radial-gradient(ellipse at 0% 55%, #a8d8ea 0%, transparent 45%), radial-gradient(ellipse at 100% 60%, #d4b8e0 0%, transparent 40%), radial-gradient(ellipse at 15% 100%, #e8896a 0%, transparent 40%), radial-gradient(ellipse at 55% 100%, #e8956e 0%, transparent 45%), radial-gradient(ellipse at 100% 100%, #f0d96a 0%, transparent 35%), linear-gradient(180deg, #fffefa 0%, #fdf8f4 50%, #f5e8dc 100%)",
-          }}
-          aria-hidden="true"
-        />
-        <div
-          className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(255,255,255,0.55)_0%,rgba(255,255,255,0.25)_38%,rgba(255,255,255,0)_72%)]"
-          aria-hidden="true"
-        />
-        <div
-          className="absolute inset-x-0 top-0 h-16 bg-gradient-to-b from-[#fbfbfb] via-[#fbfbfb]/40 to-transparent"
-          aria-hidden="true"
-        />
-        <div
-          className="absolute inset-x-0 bottom-0 h-16 bg-gradient-to-t from-[#fbfbfb] via-[#fbfbfb]/40 to-transparent"
-          aria-hidden="true"
-        />
-      </div>
+      <SectionBackground
+        gradient={WHY_GRADIENT}
+        overlayClassName="bg-[radial-gradient(ellipse_at_center,rgba(255,255,255,0.55)_0%,rgba(255,255,255,0.25)_38%,rgba(255,255,255,0)_72%)]"
+        topFadeClassName="bg-gradient-to-b from-[#fbfbfb] via-[#fbfbfb]/40 to-transparent"
+        bottomFadeClassName="bg-gradient-to-t from-[#fbfbfb] via-[#fbfbfb]/40 to-transparent"
+      />
 
       <div className="relative mx-auto flex min-h-[100svh] max-w-6xl items-center px-6 py-12 sm:py-16">
         <div className="w-full">
