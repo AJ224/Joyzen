@@ -2,10 +2,15 @@
 
 This is a mobile-responsive marketing landing page implemented with **Next.js (App Router)** and **Tailwind CSS**, based on the provided Figma design.
 
+## Project by
+
+- **ABHINANDAN JAIN** — [jainbhinandan.com](https://jainbhinandan.com)
+- **Project for**: **THE INTERNET COMPANY**
+
 ## Submission links
 
-- **GitHub repo**: (add link)
-- **Deployed link (Vercel)**: (add link)
+- **GitHub repo**: [AJ224/Joyzen](https://github.com/AJ224/Joyzen)
+- **Deployed link (Vercel)**: [joyzen-tau.vercel.app](https://joyzen-tau.vercel.app/)
 
 ## What’s implemented
 
